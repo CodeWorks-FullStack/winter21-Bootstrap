@@ -3,20 +3,161 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">#3cff00#3cff00
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
     integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="CustomBootstrap.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>🌳Yay Plants!🌲</title>
 </head>
+<style>
+  /* This is for wire framing to see our rows/columns */
+  body.debug .container,
+  body.debug .container-fluid {
+    outline: 2px double blue;
+    outline-offset: -2px;
+  }
 
-<body>
+  body.debug .row {
+    outline: 2px dashed red;
+    outline-offset: -2px;
+  }
+
+  body.debug [class*="col-"] {
+    outline: 2px dotted forestgreen;
+    outline-offset: -3px;
+  }
+</style>
+
+<body class="">
   <!-- NOTE container-fluid is full page width -->
-  <header class="container-fluid bg-dark"> </header>
+  <header class="container-fluid sticky-top">
+    <div class="row">
+      <!-- NOTE if you do not add any number the col(s) will evenly distribute on the row -->
+      <!-- <div class="col text-center p-3">
+        <h1 class="m-0">Let's learn about trees!</h1>
+      </div> -->
+      <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="tree.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> ILoveTrees.com </a>
+        </div>
+      </nav>
+    </div>
+  </header>
   <!-- NOTE container has gutters on md+ screens -->
-  <main class="container bg-secondary"> more stuff </main>
-  <footer class="container-fluid bg-dark"> this is the footer </footer>
+  <main class="container">
+    <div class="row mt-5">
+      <div class="col-md-7 offset-md-2">
+        <div class="text-center mb-3 border-top border-10 border-secondary">
+          <h2>Some Things about trees</h2>
+        </div>
+        <p><b>I can’t prove it,</b> of course, but I really like to think that whoever managed to work that throwaway
+          joke into the movie did so in order to make a point. Of course it’s ridiculous to try to associate the Lorax
+          with SUVs, or to use the anti-consumerist Lorax as any kind of commercial mascot at all. But it is going to
+          happen because that’s the way of the world. It’s just a self-serving lie, the same way that the vast majority
+          of advertising is all self-serving lies. So calm down and don’t confuse it with the Lorax selling out, because
+          it is literally a case of the advertisers falsely putting words in the little fella’s mouth. And not to get
+          all meta, but a fictional character is even easier to manipulate and appropriate than a real flesh-and-blood
+          spokesperson. But in the end, it’s all manipulation of perception. And you can choose to think about how that
+          manipulated message came together, and you can choose to disbelieve it. </p>
+        <p><b>All of which, </b>if it’s really there at all, is aimed at me and not the little guy and his age-cohort,
+          of course. He liked the movie, for what it’s worth, particularly the ending, because it was happy, but also
+          the big fat comic relief bar-ba-loot, too. He actually got a little freaked out by the
+          action-blockbuster-style climax in which the villain (the new bad guy who filled the void left when the
+          Once-Ler went into seclusion) and his goons chased Ted through the city trying to steal the last truffula
+          seed, which to be fair was pretty intense with lots of racing around and shouting and implied danger, but I
+          let him climb into my lap and we made it to the payoff. It remains to be seen if he’ll ever ask if we can get
+          the movie on DVD at home, when we already have the 70’s cartoon. I tend to think that despite the flash and
+          padding of the new version and the magic experience of seeing it bigger than life in the theater, he’ll still
+          prefer the old adaptation that’s more faithful to the book. Or, again, maybe that’s just me.</p>
+      </div>
+      <div class="col-md-3 ps-md-5">
+        <div class="row">
+          <div class="col-4 col-md-12 p-2">
+            <div class="bg-white shadow border border-dark rounded">
+              <img class="img-fluid article-img" src="https://thiscatdoesnotexist.com" alt="meow">
+              <div class="p-2">
+                <h6>Another Article</h6>
+                <p>Lorem ipsum dolor sit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-12 p-2">
+            <div class="bg-white shadow border border-dark rounded">
+              <img class="img-fluid article-img" src="https://thiscatdoesnotexist.com" alt="meow">
+              <div class="p-2">
+                <h6>Another Article</h6>
+                <p>Lorem ipsum dolor sit...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-12 p-2">
+            <div class="bg-white shadow border border-dark rounded">
+              <img class="img-fluid article-img" src="https://thiscatdoesnotexist.com" alt="meow">
+              <div class="p-2">
+                <h6>Another Article</h6>
+                <p>Lorem ipsum dolor sit...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-success">
+      <div class="col-12 text-center">
+        <h3>Fun Tree Facts!</h3>
+      </div>
+      <div class="col-md-4 p-3 d-flex align-items-center order-md-2">
+        <div class="bg-dark text-light shadow rounded w-100">
+          <div class="d-flex justify-content-center fs-3">
+            <i class="mdi mdi-bug"></i>
+            <i class="mdi mdi-bug"></i>
+            <i class="mdi mdi-bug"></i>
+          </div>
+          <div class="p-2">
+            <h4>Did you Know Trees get Bugs!</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, iusto!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3 d-flex align-items-center order-md-1">
+        <div class="bg-dark text-light shadow rounded w-100">
+          <div class="d-flex justify-content-center fs-3">
+            <i class="mdi mdi-recycle"></i>
+            <i class="mdi mdi-recycle"></i>
+            <i class="mdi mdi-recycle"></i>
+          </div>
+          <div class="p-2">
+            <h4>Recyling!</h4>
+            <p>Its good to recycle because trees are cool...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 p-3 d-flex align-items-center order-md-3">
+        <div class="bg-dark text-light shadow rounded w-100">
+          <div class="d-flex justify-content-center fs-3">
+            <i class="mdi mdi-pizza"></i>
+            <i class="mdi mdi-pizza"></i>
+            <i class="mdi mdi-pizza"></i>
+          </div>
+          <div class="p-2">
+            <h4>Pizza Trees!</h4>
+            <p>You wish there were pizza trees? Well their isnt...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid bg-dark text-white">
+    <div class="row">
+      <div class="col text-center p-3">
+        <p>Made with ♥ by CodeWorks</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
